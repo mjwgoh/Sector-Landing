@@ -18,12 +18,12 @@ const testimonials = [
     name: "Avonne G.",
     title: "Bain & Company",
   },
-  {
-    quote:
-      "It's accelerated my workflow by 10x. I can't imagine going back to the way I worked before.",
-    name: "Michelle K.",
-    title: "Chairman, Taiwan New Venture Association",
-  },
+  // {
+  //   quote:
+  //     "It's accelerated my workflow by 10x. I can't imagine going back to the way I worked before.",
+  //   name: "Michelle K.",
+  //   title: "Chairman, Taiwan New Venture Association",
+  // },
   {
     quote: "Bloody f***ing amazing. Sector has saved me so much time.",
     name: "Pengfei C.",
