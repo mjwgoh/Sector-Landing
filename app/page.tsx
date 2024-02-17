@@ -59,11 +59,11 @@ export default function Home() {
           </div>
           <div className="flex flex-grow"></div>
           <div className="flex justify-end gap-8 items-center">
-            <div>How it Works</div>
-            <div>Contact</div>
-            <div>
+            {/* <a>How it Works</a> */}
+            <a href="mailto:hello@trysector.com">Contact</a>
+            <a href="https://tally.so/r/nrox2L">
               <GradientButton text="Join Waitlist" />
-            </div>
+            </a>
           </div>
         </div>
 
@@ -101,7 +101,7 @@ export default function Home() {
         <div className="pt-24"></div>
 
         <div className="flex flex-col justify-center items-center text-center my-24">
-          <div className="flex w-1/2 justify-center text-5xl pt-24 py-10 font-light">
+          <div className="flex w-1/2 justify-center text-5xl pt-36 py-10 font-light">
             Reimagine AI with Sector
           </div>
 
@@ -111,6 +111,20 @@ export default function Home() {
             </button>
           </a>
         </div>
+      </div>
+      <div className="flex bg-gradient-to-t from-slate-900 to-black text-white h-fit px-20 py-10 pt-36 items-center w-screen justify-start">
+        <div className="footer-logo w-1/3">
+          <Image src={"/sector.svg"} width={75} height={25} alt="Logo" />
+        </div>
+        <div className="flex gap-10 w-1/3 justify-center">
+          <a href="/privacy-policy" className="footer-link">
+            Privacy Policy
+          </a>
+          <a href="/terms-of-use" className="footer-link">
+            Terms of Use
+          </a>
+        </div>
+        <div className="flex w-1/3 justify-end">Made with ❤️ in Chicago</div>
       </div>
     </main>
   );

@@ -108,9 +108,10 @@ const SkeletonFive = () => {
     },
   };
 
-  const tasks = `Yep - 2 immediate action items.
-  1. Your report to Jackson is due today.
-  2. You need to send your SXSW hotel bookings to T&E.`;  
+  const tasks = `You will be flying UA 1107 from SFO to AUS on 7 March 2024. When you arrive, you will be staying at the Fairmont from 7 March 2024 to 13 March 2024. You will be flying out from AUS to EWR via UA 360 on 13 March 2024.
+  
+  1. Flight confirmation from United Airlines [Email Link].
+  2. Hotel booking confirmation from Fairmont [Email Link].`;  
  
   return (
     <motion.div
@@ -120,7 +121,7 @@ const SkeletonFive = () => {
     >
       <motion.div
         variants={variants}
-        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+        className="flex flex-row rounded-2xl border w-2/3 border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
       >
         <Image
           src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
@@ -130,12 +131,12 @@ const SkeletonFive = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="text-sm text-neutral-500">
-          Hey Sector, is there anything that I need to finish today?
+          Hey Sector, what does my trip to SXSW look like?
         </p>
       </motion.div>
       <motion.div
         variants={variantsSecond}
-        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
+        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-2/3 ml-auto bg-white dark:bg-black"
       >
     <p className="text-sm text-neutral-500">
       {tasks.split('\n').map((line, index) => (
