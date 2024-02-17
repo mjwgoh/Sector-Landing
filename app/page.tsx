@@ -3,17 +3,13 @@ import { cn } from "@/utils/cn";
 import { motion, MotionValue } from "framer-motion";
 import React from "react";
 import { useScroll, useTransform } from "framer-motion";
-import { GemEffect } from "@/components/gemEffect";
-import { TextGenerateEffect } from "@/components/textGenerateEffect";
-import { Menu } from "@/components/navBarMenu";
-import { AutoCarousell } from "@/components/autoCarousell";
 import { Header } from "@/components/header";
-import { Navigation } from "@/components/navBar";
+import { LandingBento } from "@/components/landingBento";
+import LeftLine from "@/components/leftLine";
 
-const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
-`;
+import { EvervaultCard } from "@/components/security";
+import { Testimonials } from "@/components/testimonials";
 
- 
 const testimonials = [
   {
     quote:
@@ -46,7 +42,6 @@ const testimonials = [
   },
 ];
 
-
 export default function Home() {
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
@@ -54,26 +49,38 @@ export default function Home() {
     offset: ["start start", "end start"],
   });
 
-  const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1.2]);
-  const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1.2]);
-  const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1.2]);
-  const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2]);
-  const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
-
   return (
-    <main className="flex flex-col w-screen">
+    <main className="flex justify-center flex-col px-20 w-screen max-w-screen bg-black">
+      <Header
+        title={"Perfect Context. Everytime."}
+        description={
+          "Sector is your personal AI. Powered by your emails, messages, and calendar events."
+        }
+        button_text={"Join the Waitlist"}
+        button_url={"https://tally.so/r/nrox2L"}
+      ></Header>
 
-      <Navigation></Navigation>
-      
-      <Header title={"Perfect Context. Everytime."} description={"Sector is your personal AI, powered by your emails, messages, and calendar events."} button_text={"Join the Waitlist"} button_url={"https://tally.so/r/nrox2L"}></Header>
-      <div className="py-10 px-10">
-        <AutoCarousell items={testimonials} speed={"slow"} ></AutoCarousell>
-        <div className="flex p-40 text-5xl justify-center text-center">
-          Connects with the apps that you know and love.
-        </div>
 
+
+      <div className="flex justify-center text-5xl py-10 font-light">At a Glance</div>
+      <div className="mb-24">
+      <LandingBento />
       </div>
-      
+
+
+
+      {/* <div className="flex text-5xl pt-10 pb-5 font-light">Always Secure</div>
+      <LeftLine /> */}
+
+      <div className="flex h-96 my-15 border border-gray-700 rounded-lg">
+        <EvervaultCard text="Your personal data is always secure with Sector. All information is transferred and stored with end-to-end encryption." />
+      </div>
+
+      <div className="pt-24"></div>
+
+      {/* <div className="flex text-5xl pt-10 pb-5 font-light">Powering Leading Organizations</div>
+      <LeftLine />
+      <AutoCarousell items={testimonials} speed={"slow"}></AutoCarousell> */}
     </main>
   );
 }

@@ -12,25 +12,30 @@ export const Header = ({
   description,
   button_text,
   button_url,
+  description_small,
 }: {
   title?: string;
   description?: string;
+  description_small?: string;
   button_text?: string;
   button_url?: string;
 }) => {
   return (
-    <div className="flex h-screen justify-center items-center text-center">
-    <div>
-        <h1 className="text-6xl dark:text-white text-black">
-            {title}
-        </h1>
-        <p className="my-4 mb-10 dark:text-white text-black text-2xl">{description}</p>
-    <a href={button_url}>
-    <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-      {button_text}
-    </button>
-    </a>
-    </div>
+    <div className="flex h-screen w-2/3 items-center">
+      <div>
+        <h1 className="text-6xl dark:text-white text-black">{title}</h1>
+        <p className="my-4 mb-8 dark:text-white text-black text-2xl w-2/3">
+          {description}
+        </p>
+        <p className="my-3 mb-10 dark:text-white text-black text-lg">
+          {description_small}
+        </p>
+        <a href={button_url}>
+          <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+            {button_text}
+          </button>
+        </a>
+      </div>
     </div>
   );
 };

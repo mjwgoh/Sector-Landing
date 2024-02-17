@@ -28,6 +28,7 @@ function Navbar({ className }: { className?: string }) {
           <div className="flex gap-5">
           <HoveredLink href="/integrations">Integrations</HoveredLink>
           <HoveredLink href="/ask">Ask</HoveredLink>
+          <HoveredLink href="/halo">Halo</HoveredLink>
           <HoveredLink href="https://tally.so/r/nrox2L">Join Waitlist</HoveredLink>
             {/* <MenuItem setActive={setActive} active={active} item="App">
               <div className="flex flex-col space-y-4 text-sm">
