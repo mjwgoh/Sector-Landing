@@ -9,6 +9,7 @@ import LeftLine from "@/components/leftLine";
 
 import { EvervaultCard } from "@/components/security";
 import { Testimonials } from "@/components/testimonials";
+import { AutoCarousell } from "@/components/autoCarousell";
 
 const testimonials = [
   {
@@ -60,27 +61,42 @@ export default function Home() {
         button_url={"https://tally.so/r/nrox2L"}
       ></Header>
 
-
-
-      <div className="flex justify-center text-5xl py-10 font-light">At a Glance</div>
-      <div className="mb-24">
-      <LandingBento />
+      <div className="">
+        <div className="flex justify-center text-5xl py-10 font-light">
+          At a Glance
+        </div>
+        <div className="mb-24">
+          <LandingBento />
+        </div>
       </div>
 
-
-
-      {/* <div className="flex text-5xl pt-10 pb-5 font-light">Always Secure</div>
-      <LeftLine /> */}
+      <div className="flex justify-center text-5xl pt-24 py-10 font-light">
+        Your Privacy. Our Reputation.
+      </div>
 
       <div className="flex h-96 my-15 border border-gray-700 rounded-lg">
         <EvervaultCard text="Your personal data is always secure with Sector. All information is transferred and stored with end-to-end encryption." />
       </div>
 
+      <div className="flex justify-center text-5xl pt-24 py-10 font-light">
+        Trusted by Leading Institutions.
+      </div>
+      <AutoCarousell items={testimonials} speed={"slow"}></AutoCarousell>
+
       <div className="pt-24"></div>
 
-      {/* <div className="flex text-5xl pt-10 pb-5 font-light">Powering Leading Organizations</div>
-      <LeftLine />
-      <AutoCarousell items={testimonials} speed={"slow"}></AutoCarousell> */}
+      <div className="flex flex-col justify-center items-center text-center my-24">
+        <div className="flex w-1/2 justify-center text-5xl pt-24 py-10 font-light">
+          Reimagine AI with Sector
+        </div>
+
+        <a href={"https://"}>
+          <button className="flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+            Join Waitlist
+          </button>
+        </a>
+      </div>
+
     </main>
   );
 }
