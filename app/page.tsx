@@ -51,7 +51,7 @@ export default function Home() {
   });
 
   return (
-    <main className="flex justify-center flex-col px-20 w-screen max-w-screen bg-black">
+    <main className="flex justify-center flex-col px-20 bg-black">
       <Header
         title={"Perfect Context. Everytime."}
         description={
