@@ -22,7 +22,7 @@ function Navbar({ className }: { className?: string }) {
       <Menu setActive={setActive}>
         <div className="flex w-full">
           <div className="flex items-center">
-            <Image src={"sector.svg"} width={75} height={25}/>
+            <Image src={"sector.svg"} width={75} height={25} alt="sector"/>
           </div>
           <div className="flex flex-grow"></div>
           <div className="flex gap-5">
