@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/utils/cn";
 import React from "react";
+import { GlowingStarsBackground } from "./glowingPoints";
 
 const transition = {
   duration: 0,
@@ -21,8 +22,10 @@ export const Header = ({
   button_url?: string;
 }) => {
   return (
-    <div className="flex h-screen w-2/3 items-center">
-      <div>
+    <div className="flex h-screen relative">
+    <GlowingStarsBackground />
+    <div className="absolute inset-0 flex h-screen w-2/3 items-center">
+      <div className="">
         <h1 className="text-6xl dark:text-white text-black">{title}</h1>
         <p className="my-4 mb-8 dark:text-white text-black text-2xl w-2/3">
           {description}
@@ -37,5 +40,5 @@ export const Header = ({
         </a>
       </div>
     </div>
-  );
+  </div>  );
 };

@@ -45,18 +45,12 @@ export const GlowingStarsBackground = ({
   
     return (
       <div
-        onMouseEnter={() => {
-          setMouseEnter(true);
-        }}
-        onMouseLeave={() => {
-          setMouseEnter(false);
-        }}
         className={cn(
-          "p-4 h-full w-full",
+          "h-full w-full",
           className
         )}
       >
-        <div className="flex justify-center items-center">
+        <div className="flex h-full justify-center items-center">
           <Illustration mouseEnter={mouseEnter} />
         </div>
         <div className="px-2 pb-6">{children}</div>
@@ -94,8 +88,8 @@ export const GlowingStarsTitle = ({
 };
 
 export const Illustration = ({ mouseEnter }: { mouseEnter: boolean }) => {
-  const stars = 108;
-  const columns = 18;
+  const stars = 288;
+  const columns = 24;
 
   const [glowingStars, setGlowingStars] = useState<number[]>([]);
 
@@ -103,7 +97,7 @@ export const Illustration = ({ mouseEnter }: { mouseEnter: boolean }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      highlightedStars.current = Array.from({ length: 5 }, () =>
+      highlightedStars.current = Array.from({ length: 15 }, () =>
         Math.floor(Math.random() * stars)
       );
       setGlowingStars([...highlightedStars.current]);
@@ -114,7 +108,7 @@ export const Illustration = ({ mouseEnter }: { mouseEnter: boolean }) => {
 
   return (
     <div
-      className="h-48 p-1 w-full"
+      className="h-full p-1 w-full"
       style={{
         display: "grid",
         gridTemplateColumns: `repeat(${columns}, 1fr)`,
