@@ -24,11 +24,11 @@ const testimonials = [
     name: "Amanda T.",
     title: "Paul, Weiss, Rifkind, Wharton & Garrison",
   },
-  // {
-  //   quote: "Bloody f***ing amazing. Sector has saved me so much time.",
-  //   name: "Pengfei C.",
-  //   title: "MIT",
-  // },
+  {
+    quote: "Wowzers. Sector has saved me so much time.",
+    name: "Jackson T.",
+    title: "Harvard University",
+  },
   {
     quote:
       "Imagine having perfect recall plugged into ChatGPT. That's how magical Sector is.",
