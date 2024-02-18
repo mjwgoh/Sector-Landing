@@ -52,7 +52,7 @@ export default function Home() {
 
   return (
     <main className="flex justify-center flex-col bg-black">
-      <div className="px-20">
+      <div className="sm:px-5 md:px-20">
         <div className="flex items-center bg-black py-10">
           <div className="flex">
             <Image src={"sector.svg"} width={75} height={25} alt="sector" />
