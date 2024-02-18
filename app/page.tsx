@@ -96,7 +96,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center pt-48">
           <div className="flex justify-center text-5xl py-10 font-light">
-            Trusted by Leading Institutions.
+            Folks ❤️ Sector
           </div>
           <AutoCarousell items={testimonials} speed={"slow"}></AutoCarousell>
         </div>
