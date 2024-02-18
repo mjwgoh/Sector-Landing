@@ -175,7 +175,7 @@ const Skeleton = () => (
 const items = [
   {
     title: "Connects to the apps that you know and love",
-    description: "Get perfect context from your emails, messages, calendars, browsing history, and more.",
+    description: "Get perfect context from your emails, messages, calendars, and more.",
     header: <Image src="/apps/Combined Apps.png" layout="responsive" height={200} width={200} alt="apps" />,
     className: "md:col-span-2",
     icon: "",
