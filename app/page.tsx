@@ -103,7 +103,7 @@ export default function Home() {
 
         <div className="flex flex-col justify-center items-center text-center pt-48 pb-24">
           <div className="flex w-1/2 justify-center text-5xl pt-36 py-10 font-light">
-            Reimagine AI with Sector
+            Level Up Your Productivity
           </div>
 
           <a href={"https://tally.so/r/nrox2L"}>
@@ -118,12 +118,12 @@ export default function Home() {
           <Image src={"/sector.svg"} width={75} height={25} alt="Logo" />
         </div>
         <div className="flex gap-10 w-1/3 justify-center">
-          <a href="/privacy-policy" className="footer-link">
+          {/* <a href="/privacy-policy" className="footer-link">
             Privacy Policy
           </a>
           <a href="/terms-of-use" className="footer-link">
             Terms of Use
-          </a>
+          </a> */}
         </div>
         <div className="flex w-1/3 justify-end">Made with ❤️ in Chicago</div>
       </div>
