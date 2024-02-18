@@ -60,7 +60,7 @@ export default function Home() {
           <div className="flex flex-grow"></div>
           <div className="flex justify-end gap-8 items-center">
             {/* <a>How it Works</a> */}
-            <a href="mailto:hello@trysector.com">Contact</a>
+            <a className="hover:underline" href="mailto:hello@trysector.com">Contact</a>
             <a href="https://tally.so/r/nrox2L">
               <GradientButton text="Join Waitlist" />
             </a>
