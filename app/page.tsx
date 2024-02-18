@@ -22,7 +22,7 @@ const testimonials = [
     quote:
       "It's accelerated my workflow by 10x. I can't imagine going back to the way I worked before.",
     name: "Amanda T.",
-    title: "Paul, Weiss",
+    title: "Paul, Weiss, Rifkind, Wharton & Garrison",
   },
   {
     quote: "Bloody f***ing amazing. Sector has saved me so much time.",
