@@ -93,7 +93,7 @@ export default function Home() {
           <EvervaultCard text="Your personal data is always secure with Sector. All information is transferred and stored with end-to-end encryption." />
         </div>
 
-        <div className="flex justify-center text-5xl pt-24 py-10 font-light">
+        <div className="flex justify-center text-5xl pt-36 py-10 font-light">
           Trusted by Leading Institutions.
         </div>
         <AutoCarousell items={testimonials} speed={"slow"}></AutoCarousell>
