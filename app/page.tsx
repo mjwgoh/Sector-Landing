@@ -12,12 +12,12 @@ import { AutoCarousell } from "@/components/autoCarousell";
 import GradientButton from "@/components/gradientButton";
 
 const testimonials = [
-  {
-    quote:
-      "Sector is like magic. It's like having a personal assistant that knows everything about you.",
-    name: "Avonne G.",
-    title: "Bain & Company",
-  },
+  // {
+  //   quote:
+  //     "Sector is like magic. It's like having a personal assistant that knows everything about you.",
+  //   name: "Avonne G.",
+  //   title: "Bain & Company",
+  // },
   {
     quote:
       "It's accelerated my workflow by 10x. I can't imagine going back to the way I worked before.",
