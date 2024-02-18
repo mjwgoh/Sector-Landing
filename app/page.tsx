@@ -80,27 +80,28 @@ export default function Home() {
           <div className="flex justify-center text-5xl py-10 font-light">
             At a Glance
           </div>
-          <div className="mb-24">
+          <div className="">
             <LandingBento />
           </div>
         </div>
 
-        <div className="flex justify-center text-5xl pt-24 py-10 font-light">
-          Your Privacy. Our Reputation.
+        <div className="flex flex-col pt-48">
+          <div className="flex justify-center text-5xl py-10 font-light">
+            Your Privacy. Our Reputation.
+          </div>
+
+          <div className="flex h-96 border border-gray-700 rounded-lg">
+            <EvervaultCard text="Your personal data is always secure with Sector. All information is transferred and stored with end-to-end encryption." />
+          </div>
+        </div>
+        <div className="flex flex-col justify-center pt-48">
+          <div className="flex justify-center text-5xl py-10 font-light">
+            Trusted by Leading Institutions.
+          </div>
+          <AutoCarousell items={testimonials} speed={"slow"}></AutoCarousell>
         </div>
 
-        <div className="flex h-96 my-15 border border-gray-700 rounded-lg">
-          <EvervaultCard text="Your personal data is always secure with Sector. All information is transferred and stored with end-to-end encryption." />
-        </div>
-
-        <div className="flex justify-center text-5xl pt-36 py-10 font-light">
-          Trusted by Leading Institutions.
-        </div>
-        <AutoCarousell items={testimonials} speed={"slow"}></AutoCarousell>
-
-        <div className="pt-24"></div>
-
-        <div className="flex flex-col justify-center items-center text-center my-24">
+        <div className="flex flex-col justify-center items-center text-center pt-48 pb-24">
           <div className="flex w-1/2 justify-center text-5xl pt-36 py-10 font-light">
             Reimagine AI with Sector
           </div>
