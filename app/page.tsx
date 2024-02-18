@@ -87,7 +87,7 @@ export default function Home() {
 
         <div className="flex flex-col pt-48">
           <div className="flex justify-center text-5xl py-10 font-light">
-            Your Privacy. Our Reputation.
+            Your Privacy 🔒 Our Reputation
           </div>
 
           <div className="flex h-96 border border-gray-700 rounded-lg">
