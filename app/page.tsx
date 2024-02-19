@@ -25,7 +25,7 @@ const testimonials = [
     title: "Paul, Weiss, Rifkind, Wharton & Garrison",
   },
   {
-    quote: "Banger. Sector has saved me so much time.",
+    quote: "Banger. Sector has saved me so much time it's mindblowing.",
     name: "Jackson T.",
     title: "Harvard University",
   },
@@ -34,7 +34,6 @@ const testimonials = [
     name: "Alice Z.",
     title: "United Nations",
   },
-
   {
     quote:
       "Imagine having perfect recall plugged into ChatGPT. That's how magical Sector is.",
