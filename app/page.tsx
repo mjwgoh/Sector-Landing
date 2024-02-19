@@ -12,12 +12,12 @@ import { AutoCarousell } from "@/components/autoCarousell";
 import GradientButton from "@/components/gradientButton";
 
 const testimonials = [
-  // {
-  //   quote:
-  //     "Sector is like magic. It's like having a personal assistant that knows everything about you.",
-  //   name: "Avonne G.",
-  //   title: "Bain & Company",
-  // },
+  {
+    quote:
+      "Sector knows everything about my personal relationships. It's leveled up my professional and personal life.",
+    name: "Nuo S.",
+    title: "Vectr Ventures",
+  },
   {
     quote:
       "It's accelerated my workflow by 10x. I can't imagine going back to the way I worked before.",
@@ -25,10 +25,16 @@ const testimonials = [
     title: "Paul, Weiss, Rifkind, Wharton & Garrison",
   },
   {
-    quote: "Wowzers. Sector has saved me so much time.",
+    quote: "Banger. Sector has saved me so much time.",
     name: "Jackson T.",
     title: "Harvard University",
   },
+  {
+    quote: "Okay, so I'm mindblown. What is this voodoo magic? Gamechanger.",
+    name: "Alice Z.",
+    title: "United Nations",
+  },
+
   {
     quote:
       "Imagine having perfect recall plugged into ChatGPT. That's how magical Sector is.",
