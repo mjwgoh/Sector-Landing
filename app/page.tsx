@@ -60,7 +60,7 @@ export default function Home() {
       <div className="sm:px-5 md:px-20">
         <div className="flex items-center py-10">
           <div className="flex">
-            <Image src={"sector.svg"} width={75} height={25} alt="sector" />
+            <Image src={"sector.svg"} height={60} width={140} alt="sector" />
           </div>
           <div className="flex flex-grow"></div>
           <div className="flex justify-end gap-8 items-center">
