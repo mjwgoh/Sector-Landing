@@ -56,7 +56,7 @@ export default function Home() {
   });
 
   return (
-    <main className="flex justify-center flex-col">
+    <main className="flex justify-center flex-col bg-black text-white">
       <div className="sm:px-5 md:px-20">
         <div className="flex items-center py-10">
           <div className="flex">

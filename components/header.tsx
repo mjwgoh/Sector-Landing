@@ -26,11 +26,11 @@ export const Header = ({
     <GlowingStarsBackground />
     <div className="absolute inset-0 flex h-screen w-2/3 items-center">
       <div className="">
-        <h1 className="text-6xl dark:text-white text-black">{title}</h1>
-        <p className="my-4 mb-8 dark:text-white text-black text-2xl w-2/3">
+        <h1 className="text-6xl text-white">{title}</h1>
+        <p className="my-4 mb-8 text-white text-2xl w-2/3">
           {description}
         </p>
-        <p className="my-3 mb-10 dark:text-white text-black text-lg">
+        <p className="my-3 mb-10 text-white text-lg">
           {description_small}
         </p>
         <a href={button_url}>
