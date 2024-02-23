@@ -25,9 +25,9 @@ const testimonials = [
     title: "Paul, Weiss, Rifkind, Wharton & Garrison",
   },
   {
-    quote: "Banger. Sector has saved me so much time it's mindblowing.",
-    name: "Jackson T.",
-    title: "Harvard University",
+    quote: "Truly amazing - Sector has saved us so much time!",
+    name: "Pengfei C.",
+    title: "MIT",
   },
   {
     quote: "Okay, so I'm mindblown. What is this voodoo magic? Gamechanger.",
