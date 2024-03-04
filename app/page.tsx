@@ -60,7 +60,7 @@ export default function Home() {
       <div className="sm:px-5 md:px-20">
         <div className="flex items-center py-10">
           <div className="flex">
-            <Image src={"sector.svg"} height={60} width={140} alt="sector" />
+            <Image src={"/sectorlight.png"} height={60} width={140} alt="sector" />
           </div>
           <div className="flex flex-grow"></div>
           <div className="flex justify-end gap-8 items-center">
@@ -120,7 +120,7 @@ export default function Home() {
       </div>
       <div className="flex bg-gradient-to-t from-slate-900 to-black text-white h-fit px-20 py-10 pt-36 items-center w-screen justify-start">
         <div className="footer-logo w-1/3">
-          <Image src={"/sector.svg"} width={75} height={25} alt="Logo" />
+          <Image src={"/sectorlight.png"} width={75} height={25} alt="Logo" />
         </div>
         <div className="flex gap-10 w-1/3 justify-center">
           {/* <a href="/privacy-policy" className="footer-link">
